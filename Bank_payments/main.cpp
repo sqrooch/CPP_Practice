@@ -43,6 +43,5 @@ and then outputs the amount of monthly bank payments." << endl;
 	cout << endl << "Your deposit is: " << deposit << " EUR" << endl;
 	cout << "Your interest rate is: " << percent << " %" << endl;
 	cout << "Your monthly payments will be: " << round(deposit * percent / 12) / 100 << " EUR" << endl;
-
 	return 0;
 }
