@@ -82,6 +82,5 @@ If it is impossible to overcome any of the distances, the program must display a
 		cout << endl << "Everything is good. I wish you a successful flight!" << endl << endl;
 		break;
 	}
-
 	return 0;
 }
