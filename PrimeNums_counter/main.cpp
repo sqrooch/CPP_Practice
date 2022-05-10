@@ -1,4 +1,4 @@
-// This algorithm counts the number of primes in the series of natural numbers in range from 1 to a number entered by user.
+// This algorithm counts the number of primes in the series of natural numbers in range from "1" to a number entered by user.
 
 #include <iostream>
 using namespace std;
@@ -11,8 +11,9 @@ int main()
 	cout << "Enter a natural number here: ";
 	cin >> n;
 
-
-	for (n; n > 1; n--) // 1 is not a prime number. The prime numbers row starts with 2.
+	// We must remember that the series of primes starts with "2".
+	// let's try the usual linear enumeration.
+	for (n; n > 1; n--) 
 	{
 		for (int i = (n - 1); i > 1; i--)
 		{
