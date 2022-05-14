@@ -26,7 +26,7 @@ int main()
 	return 0;
 }
 
-// My solution.
+// My solution:
 /*
 bool line_ending_matcher(string const& str, string const& ending)
 {
@@ -53,9 +53,9 @@ bool line_ending_matcher(string const& str, string const& ending)
 */
 
 
-// Best solution.
+// Best solution:
 bool line_ending_matcher(string const& str, string const& ending)
 {
 	cout << boolalpha;
-	return str.size() >= ending.size() && str.compare(str.size() - ending.size(), std::string::npos, ending) == 0;
+	return str.size() >= ending.size() && str.compare(str.size() - ending.size(), string::npos, ending) == 0;
 }
