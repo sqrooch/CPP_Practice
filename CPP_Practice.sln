@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Line_ending_matcher", "Line
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "phone_number_creator", "phone_number_creator\phone_number_creator.vcxproj", "{ADF32751-F38D-4A16-899A-9E6CCFEE4064}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prime_number_test", "prime_number_test\prime_number_test.vcxproj", "{0176DC16-5011-4B2D-9173-A71433822B7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{ADF32751-F38D-4A16-899A-9E6CCFEE4064}.Release|x64.Build.0 = Release|x64
 		{ADF32751-F38D-4A16-899A-9E6CCFEE4064}.Release|x86.ActiveCfg = Release|Win32
 		{ADF32751-F38D-4A16-899A-9E6CCFEE4064}.Release|x86.Build.0 = Release|Win32
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Debug|x64.ActiveCfg = Debug|x64
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Debug|x64.Build.0 = Debug|x64
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Debug|x86.Build.0 = Debug|Win32
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Release|x64.ActiveCfg = Release|x64
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Release|x64.Build.0 = Release|x64
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Release|x86.ActiveCfg = Release|Win32
+		{0176DC16-5011-4B2D-9173-A71433822B7C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
