@@ -53,7 +53,7 @@ bool line_ending_matcher(string const& str, string const& ending)
 */
 
 
-// Best solution:
+// The Best solution:
 bool line_ending_matcher(string const& str, string const& ending)
 {
 	cout << boolalpha;
