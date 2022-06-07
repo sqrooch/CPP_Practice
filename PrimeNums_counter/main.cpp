@@ -10,41 +10,49 @@ using namespace std;
 
 int main()
 {
-	int primesCounter = 0;
-	int n;
-	string input_n;
+	int primes_counter = 0;
+	int natural;
+	string input_natural;
 
 	do
 	{
 		system("cls");
 
 		cout << "Enter a natural number here: ";
-		cin >> input_n;
+		cin >> input_natural;
 
 		try
 		{
-			n = stoi(input_n);
+			natural = stoi(input_natural);
 		}
 		catch (invalid_argument)
 		{
 			continue;
 		}
-	} while (n <= 0);
+	} while (natural <= 0);
 	
-	// We must remember that the series of primes starts with "2".
-	for (n; n > 1; n--) 
+
+	bool* sieve = new bool[natural+1];
+
+	for (int i = 2; i <= natural; i++)
 	{
-		for (int i = (n - 1); i > 1; i--)
+		if (sieve[i])
 		{
-			if (n % i == 0)
+			primes_counter++;
+			cout << i << "\t";
+			for (int j = i * i; j <= natural; j += i)
 			{
-				primesCounter--;
-				break;
+				if (j % i == 0)
+				{
+					sieve[j] = false;
+				}
 			}
 		}
-		primesCounter++;
 	}
+	cout << endl;
+	cout << "\nThere are " << primes_counter << " prime numbers in the proposed series of numbers.\n\n";
 
-	cout << "There are " << primesCounter << " prime numbers in the proposed series of numbers." << endl;
+	delete[] sieve;
+	sieve = nullptr;
 	return 0;
 }
